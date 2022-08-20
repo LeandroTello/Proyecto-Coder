@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Capriola'); 
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Capriola ;
+    color: rgb(255, 255, 255);
+}
+
+
+footer {
+    background-color: rgb(22, 19, 22)
+}
+
+header {
+    background-color: rgb(91, 50, 207);
+    width: auto;
+    height: auto;
+    position: sticky;
+    top: 0px; 
+}
+
+main {
+    background-color: rgb(48, 42, 42);
+}
+
+.enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.enlaces ul li {
+    display: inline-block;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-right: 65px;
+}
+
+.enlaces ul li a{
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.enlaces-Accesos{
+    margin-left: 250px;
+}
+
+.catalogo{
+    margin-top: 1%;
+}
+
+
+.sobre-Catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.sobre-Index{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.sobre-Nombre{
+    text-align: center;
+}
+
+.productos-Index{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 330px;
+}
+
+.productos-Index h2{
+    background-color:crimson;
+    border-radius: 5px;
+}
+
+.productos-Index a{
+    text-decoration: none;
+}
+
+.banner img{
+    width: 100%;
+}
+
+footer {
+    display: flex;
+}
+
+footer ul li{
+    display: flex;
+}
+
+footer ul{
+    display: inline-block;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-right: 87.8%;
+}
+
+.razon{
+    width: 150px;
+    height: 100%;
+    align-items: center;
+}
+
+.espacio-accesorios{
+    height: 1200px;
+}
+
+.espacio{
+    height: 500px;
+}
+
+.formulario{
+    position: relative;
+    top: 80px;
+    width: 800px;
+    left: 550px;
+}
+
+.boton-formulario{
+    background-color: crimson;
+    border-radius: 5px;
+}
+
+.formulario-centrar{
+    text-align: center;
+}
+
+.imagen-mover{
+    width: 800px;
+    height: 500px;
+    margin-left: 75px;
+
+}
+
+.espacio-noticia{
+    height: 1200px;
+}
+
+.grid-main{
+    grid-area: grid-main;
+}
+
+.grid-header{
+    grid-area: grid-header;
+}
+
+.grid-footer{
+    grid-area: grid-footer
+}
+
+.grid-contenedor{
+    display: grid;
+    grid-template-areas: 
+    "grid-header"
+    "grid-main"
+    "grid-footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto 60px;
+}
+
+@media screen and (max-width:768px) {
+    .grid-contenedor{
+    display: grid;
+    grid-template-areas: 
+    "grid-header"
+    "grid-main"
+    "grid-footer";
+    grid-template-columns: 100%; 
+    grid-template-rows: auto auto auto; 
+}
+
+.sobre-Imagen img{
+    width: 75%;
+    margin-left: 10px;
+ 
+}
+.sobre-Nombre{
+    width: 60;
+    margin-right: 50px;
+}
+.enlaces-Accesos{
+    margin-left: auto;
+}
+
+.imagen-mover{
+    margin-left: 30px;
+    width: 80%;
+    height: auto;
+}
+
+.formulario{
+    background-color: aqua;
+}
+}
