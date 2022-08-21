@@ -69,6 +69,16 @@ main {
     text-align: center;
 }
 
+.sobre-Imagen {
+
+    transition: height 2s;
+}
+
+.sobre-Imagen:hover{
+
+transform: translate(-10px, -20px);
+}
+
 .productos-Index{
     margin-left: auto;
     margin-right: auto;
@@ -197,7 +207,20 @@ footer ul{
     height: auto;
 }
 
-.formulario{
-    background-color: aqua;
+
+
+h2{
+
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
 }
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
