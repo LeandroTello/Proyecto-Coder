@@ -5,9 +5,21 @@
     padding: 0%;
     font-family: Capriola ;
     color: rgb(255, 255, 255);
+    box-sizing: border-box;
 }
 
+.text-center{
+    text-align: center!important;
+}
 
+.texto-centrado{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 footer {
     background-color: rgb(22, 19, 22)
@@ -48,7 +60,8 @@ main {
 }
 
 .catalogo{
-    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -129,20 +142,25 @@ footer ul{
     height: 1500x;
 }
 
+h1{
+    display: block;
+    font-size: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
 .formulario{
-    position: relative;
-    top: 80px;
-    width: 800px;
-    left: 550px;
+    display: flex;
+    flex-direction: column;
+   width: 30%;
 }
 
-.boton-formulario{
-    background-color: crimson;
-    border-radius: 5px;
-}
-
-.formulario-centrar{
-    text-align: center;
+.form-cuadro{
+    background: transparent;
+    border-radius: 50px;
+  
 }
 
 .imagen-mover{
